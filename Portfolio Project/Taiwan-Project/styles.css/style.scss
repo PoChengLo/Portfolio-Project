@@ -1,0 +1,193 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+.noto-sans tc-main {
+  font-family: "Noto Sans TC", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+header {
+  width: 100%;
+  padding: 1rem;
+  background-color: #cecdcd;
+}
+nav {
+  background-color: #7d7d7d;
+  padding: 1rem 0rem;
+  ul {
+    list-style-type: none;
+
+    li {
+      a.active {
+        background-color: white;
+        color: black;
+      }
+      a {
+        padding: 1rem;
+        color: white;
+        font-size: 1.25rem;
+      }
+      a:hover {
+        background-color: white;
+        color: black;
+        transition: 1s ease;
+      }
+    }
+  }
+}
+main {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  div.left {
+    margin: 3rem;
+    display: flex;
+    flex-direction: column;
+    flex: 5 1 700px;
+    flex-wrap: wrap;
+    curve_chart {
+      display: flex;
+    }
+  }
+
+  div.right {
+    margin: 1rem;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 500px;
+    flex-wrap: wrap;
+    h3 {
+      padding: 1rem;
+    }
+    p {
+      padding: 1rem;
+    }
+    iframe {
+      border-radius: 10%;
+    }
+  }
+}
+div.farm {
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  h3 {
+    font-size: 2rem;
+  }
+  spam {
+    text-align: center;
+    font-size: 2rem;
+    color: red;
+  }
+}
+
+div.industrial {
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  h3 {
+    font-size: 2rem;
+  }
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  div.industrial1 {
+    margin: 2rem;
+    flex: 2 1 500px;
+  }
+  div.industrial2 {
+    margin: 2rem;
+    flex: 4 1 700px;
+  }
+  div.ecnomic {
+    margin: 2rem;
+    text-align: center;
+    h3 {
+      font-size: 2rem;
+      text-align: left;
+    }
+    img {
+      height: 40vh;
+      width: 70vw;
+      margin: 0rem 2rem;
+    }
+    p {
+      text-align: left;
+    }
+    ul {
+      margin-top: 1rem;
+      text-align: left;
+      a {
+        text-align: left;
+      }
+    }
+  }
+}
+main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  div.pic {
+    img {
+      margin: 2rem;
+      height: 30vw;
+      width: 30vw;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+  }
+  div.essay {
+    margin: 3rem;
+    flex: 3 1 500px;
+    h3 {
+      font-size: 2rem;
+      padding: 1rem 0rem;
+    }
+    ul {
+      padding: 1rem 0rem;
+      font-size: 1rem;
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  nav {
+    ul {
+      li {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+  main {
+    div.ecnomic {
+      margin: 1rem;
+      img {
+        height: 30vh;
+        width: 70vw;
+        margin: orem;
+      }
+    }
+    div.pic {
+      img {
+        width: 40vw;
+        height: 40vw;
+      }
+    }
+  }
+}

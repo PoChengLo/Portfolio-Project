@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+/*this is header css*/
+div.header {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  position: sticky;
+  background-color: rgb(224, 224, 224);
+  top: 0;
+}
+div.header div.logo {
+  display: flex;
+  align-items: center;
+  flex: 4 1 500px;
+}
+div.header img {
+  width: 6vw;
+  height: 6vw;
+}
+div.header nav {
+  flex: 2 1 400px;
+}
+div.header nav ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+}
+div.header nav li a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+/*this is firstpage css*/
+div.firstpage {
+  width: 100%;
+  height: 90vh;
+  background-image: url(../Pictures/pexels-photo-416676.jpeg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+div.firstpage h2 {
+  color: rgb(255, 255, 255);
+  font-size: 3rem;
+}
+div.firstpage a {
+  color: white;
+  font-size: 3rem;
+  text-decoration: none;
+  margin-top: 2rem;
+  padding: 2rem 3rem;
+  border: 0;
+  background-color: black;
+  border-radius: 20%;
+}
+
+/*this is seconcpage css*/
+h3 {
+  padding: 1rem 0rem;
+  font-size: 3rem;
+  text-align: center;
+}
+
+div.secondpage {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+div.secondpage div.otherpages {
+  display: flex;
+  flex-direction: column;
+  min-height: 80vh;
+  text-align: center;
+  align-items: center;
+  flex: 1 1 300px;
+  justify-content: space-around;
+  margin: 0rem 2rem;
+}
+div.secondpage div.otherpages img {
+  width: 20vw;
+  height: 20vw;
+  border-radius: 50%;
+}
+div.secondpage div.otherpages h4 {
+  font-size: 3rem;
+}
+div.secondpage div.otherpages a {
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  padding: 1.5rem;
+  border-radius: 10%;
+  font-size: 2rem;
+}
+div.secondpage div.otherpages p {
+  font-size: 2rem;
+}
+
+/*this is footer css*/
+div.footer {
+  display: flex;
+  width: 100%;
+  min-height: 40vh;
+  margin-top: 2rem;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(224, 224, 224);
+  justify-content: space-around;
+}
+div.footer div.footer1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+div.footer div.footer1 img {
+  height: 5vw;
+  width: 5vw;
+}
+div.footer div.footer1 h3 {
+  font-size: 3rem;
+  font-weight: 400;
+}
+div.footer div.link {
+  display: flex;
+  width: 70%;
+  justify-content: space-around;
+}
+div.footer div.link a {
+  text-decoration: none;
+  color: black;
+  font-size: 2rem;
+}
+div.footer div.logolink {
+  display: flex;
+  width: 70%;
+  justify-content: space-around;
+}
+div.footer div.logolink img {
+  width: 5vw;
+  height: 5vw;
+}
+div.footer h3 {
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+/*this is RWD css*/
+@media screen and (max-width: 600px) {
+  div.header img {
+    width: 15vw;
+    height: 15vw;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+  div.secondpage div.otherpages img {
+    width: 40vw;
+    height: 40vw;
+  }
+  div.secondpage div.otherpages h4 {
+    font-size: 2rem;
+  }
+  div.secondpage div.otherpages p {
+    font-size: 1.5rem;
+  }
+  div.secondpage div.otherpages a {
+    font-size: 1.5rem;
+  }
+  div.footer div.footer1 img {
+    width: 15vw;
+    height: 15vw;
+  }
+  div.footer div.footer1 h3 {
+    font-size: 2rem;
+  }
+  div.footer div.link {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  div.footer div.link a {
+    padding: 1rem;
+    font-size: 1.5rem;
+  }
+  div.footer div.logolink a img {
+    width: 10vw;
+    height: 10vw;
+  }
+}/*# sourceMappingURL=style.css.map */

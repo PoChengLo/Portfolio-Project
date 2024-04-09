@@ -1,0 +1,200 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.body {
+  position: relative;
+}
+
+.orangeback {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  width: 100vh;
+  height: 150vh;
+}
+
+div.header nav {
+  width: 100%;
+}
+div.header nav ul {
+  padding: 2rem;
+  width: 70%;
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+}
+div.header nav ul li {
+  font-size: 2rem;
+}
+div.header nav ul li a.active {
+  color: orange;
+}
+div.header nav ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+div.main {
+  display: flex;
+  flex-wrap: wrap;
+}
+div.main div.left {
+  flex: 3 1 500px;
+  padding: 3rem;
+}
+div.main div.left h1 {
+  font-weight: 600;
+  font-size: 4rem;
+  color: orange;
+}
+div.main div.left p {
+  font-size: 2rem;
+  padding: 2rem 0rem;
+}
+div.main div.right {
+  flex: 1 1 600px;
+  position: relative;
+}
+div.main div.right img.selfpic1 {
+  position: absolute;
+  border-radius: 50%;
+  width: 30vw;
+  height: 30vw;
+  top: 45vh;
+  right: 20vw;
+  transform: translateY(-30%);
+}
+div.main div.table {
+  flex: 3 1 500px;
+  padding: 2rem;
+  font-size: 1.5rem;
+}
+div.main div.table table {
+  border-collapse: collapse;
+}
+div.main div.table table tr {
+  border-bottom: 2px solid gray;
+  transition: all 0.2s ease;
+}
+div.main div.table table tr td {
+  padding: 1rem;
+}
+div.main div.table table tr:hover {
+  background-color: orange;
+}
+div.main div.selfpic2 {
+  flex: 1 1 600px;
+  position: relative;
+}
+div.main div.selfpic2 img {
+  width: 30vw;
+}
+div.main div.selfpic2 div.orangeback2 {
+  position: absolute;
+  width: 30vw;
+  height: 85vh;
+  background-color: orange;
+  top: 30px;
+  left: 80px;
+  z-index: -1;
+}
+div.main div.form {
+  flex: 1 1 600px;
+  margin: 1rem;
+}
+div.main div.form form {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: left;
+}
+div.main div.form form div {
+  margin: 0.5rem;
+}
+div.main div.form form div lable {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+div.main div.form form div input,
+div.main div.form form div textarea {
+  background-color: orange;
+  color: white;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  border: none;
+  width: 80%;
+}
+div.main div.form form div textarea {
+  vertical-align: top;
+}
+div.main div.form form button {
+  align-self: center;
+  background-color: orange;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 1rem 2rem;
+  font-size: 2rem;
+}
+div.main div.line {
+  background-color: gray;
+  width: 3px;
+}
+div.main div.contact {
+  flex: 1 1 500px;
+}
+div.main div.contact div.contact {
+  font-size: 1.2rem;
+}
+div.main div.contact div.contact h2 {
+  margin: 2rem;
+}
+
+div.footer {
+  margin: 1rem;
+}
+div.footer a {
+  padding: 1rem;
+}
+
+@media screen and (max-width: 1100px) {
+  .orangeback {
+    opacity: 0;
+  }
+  div.main div.right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  div.main div.right img.selfpic1 {
+    position: static;
+    transform: none;
+    width: 40vw;
+    height: 40vw;
+  }
+  div.main div.selfpic2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  div.main div.selfpic2 img {
+    width: 40vw;
+  }
+  div.main div.selfpic2 div.orangeback2 {
+    display: none;
+  }
+  div.header nav ul {
+    width: 100%;
+    flex-direction: column;
+  }
+  div.header nav ul li {
+    padding: 1rem 0rem;
+    border-bottom: 2px solid gray;
+  }
+}/*# sourceMappingURL=style.css.map */
